@@ -45,7 +45,7 @@ I. 클래식 지표
 plot(x = data$average, y = data$run, main = "타율-득점", xlab = "타율", ylab = "득점", col = "blueviolet")
 ```
 
-![](Graph_material/unnamed-chunk-2-1.png)
+![](Material/Graph_material/unnamed-chunk-2-1.png)
 
 ### 1-2. 상관관계 분석
 
@@ -118,7 +118,7 @@ graph1 <- ggplot2::ggplot(data = data, aes(x = average, y = run)) +
 graph1
 ```
 
-![](Graph_material/unnamed-chunk-5-1.png)
+![](Material/Graph_material/unnamed-chunk-5-1.png)
 
 2. 출루율-득점 분석
 -------------------
@@ -137,7 +137,7 @@ graph1
 plot(x = data$obp, y = data$run, main = "출루율-득점", xlab = "출루율", ylab = "득점", col = "blueviolet")
 ```
 
-![](Graph_material/unnamed-chunk-6-1.png)
+![](Material/Graph_material/unnamed-chunk-6-1.png)
 
 ### 2-2. 상관관계 분석
 
@@ -208,7 +208,7 @@ graph2 <- ggplot2::ggplot(data = data, aes(x = obp, y = run)) +
 graph2
 ```
 
-![](Graph_material/unnamed-chunk-9-1.png)
+![](Material/Graph_material/unnamed-chunk-9-1.png)
 
 3. 장타율-득점 분석
 -------------------
@@ -227,7 +227,7 @@ graph2
 plot(x = data$slg, y = data$run, main = "장타율-득점", xlab = "장타율", ylab = "득점", col = "blueviolet")
 ```
 
-![](Graph_material/unnamed-chunk-10-1.png)
+![](Material/Graph_material/unnamed-chunk-10-1.png)
 
 ### 3-2. 상관관계 분석
 
@@ -296,7 +296,7 @@ graph3 <- ggplot2::ggplot(data = data, aes(x = slg, y = run)) +
 graph3
 ```
 
-![](Graph_material/unnamed-chunk-13-1.png)
+![](Material/Graph_material/unnamed-chunk-13-1.png)
 
 4. OPS-득점 분석
 ----------------
@@ -311,7 +311,7 @@ OPS(On base Plus Slugging)는 출루율과 장타율을 더한 수치이다.
 plot(x = data$ops, y = data$run, main = "OPS-득점", xlab = "OPS", ylab = "득점", col = "blueviolet")
 ```
 
-![](Graph_material/unnamed-chunk-14-1.png)
+![](Material/Graph_material/unnamed-chunk-14-1.png)
 
 ### 4-2. 상관관계 분석
 
@@ -380,7 +380,7 @@ graph4 <- ggplot2::ggplot(data = data, aes(x = ops, y = run)) +
 graph4
 ```
 
-![](Graph_material/unnamed-chunk-17-1.png)
+![](Material/Graph_material/unnamed-chunk-17-1.png)
 
 II. 세이버메트릭스
 ==================
@@ -406,7 +406,7 @@ wOBA(weight On Base Average)는 탐 탱고가 선형회귀분석을 통해 고�
 plot(x = data$woba, y = data$run, main = "wOBA-득점", xlab = "wOBA", ylab = "득점", col = "blueviolet")
 ```
 
-![](Graph_material/unnamed-chunk-18-1.png)
+![](Material/Graph_material/unnamed-chunk-18-1.png)
 
 ### 5-2. 상관관계 분석
 
@@ -475,7 +475,7 @@ graph5 <- ggplot2::ggplot(data = data, aes(x = woba, y = run)) +
 graph5
 ```
 
-![](Graph_material/unnamed-chunk-21-1.png)
+![](Material/Graph_material/unnamed-chunk-21-1.png)
 
 6. wRC-득점 분석
 ----------------
@@ -490,7 +490,7 @@ wRC와 이를 리그 평균과 비교해 상대화한 wRC+가 타자의 생산�
 plot(x = data$wrc, data$run, main = "wRC-득점", xlab = "wRC", ylab = "득점", col = "blueviolet")
 ```
 
-![](Graph_material/unnamed-chunk-22-1.png)
+![](Material/Graph_material/unnamed-chunk-22-1.png)
 
 앞서 다른 지표와 달리 육안으로도 분포가 상당한 선형을 이루고 있음을 알 수 있다.
 
@@ -561,7 +561,7 @@ graph6 <- ggplot2::ggplot(data = data, aes(x = wrc, y = run)) +
 graph6
 ```
 
-![](Graph_material/unnamed-chunk-25-1.png)
+![](Material/Graph_material/unnamed-chunk-25-1.png)
 
 그래프 한 눈에 보기
 ===================
@@ -570,4 +570,4 @@ graph6
 gridExtra::grid.arrange(graph1, graph2, graph3, graph4, graph5, graph6, ncol = 2)
 ```
 
-![](Graph_material/unnamed-chunk-26-1.png)
+![](Material/Graph_material/unnamed-chunk-26-1.png)
