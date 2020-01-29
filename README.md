@@ -1,4 +1,4 @@
-# <div style="text-align:center">야　　구<br>타격지표<br>비교분석</div>
+# <p align="center">야　　구<br>타격지표<br>비교분석</p>
 
 <div style="text-align: right">
 미디어커뮤니케이션학과
